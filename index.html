@@ -1,12 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everything Affordable</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <title>Everything Affordable</title>
 </head>
+
 <body>
-    
+  <header class="header">
+    <a href="#">
+      <img class="logo" alt="EverythingAffordable logo" src="content/img/logo/EverythingAffordable.jpg" /></a>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="#">Products</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="#">Categories</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="#">Contact Us</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="#"><img src="/content/img/customer/1.jpg" alt="Profile Picture" /></a>
+        </li>
+        <li>
+          <a class="main-nav-link nav-cta" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
+
+  <main>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">
+            An Online shopping mall
+          </h1>
+          <p class="hero-description">
+            The e-commerce store with quality and affordable gadgets delivered to your doorsteps. Tailored to your
+            earning power and needs.
+          </p>
+          <a href="#" class="btn btn--full margin-right-sm">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#" class="btn--outline"><i class="fa-regular fa-heart"></i></a>
+          <div class="delivered-products">
+            <div class="delivered-imgs">
+              <img src="content/img/customer/2.jpg" alt="Customer photo" />
+              <img src="content/img/customer/3.jpg" alt="Customer photo" />
+              <img src="content/img/customer/4.jpg" alt="Customer photo" />
+              <img src="content/img/customer/5.jpg" alt="Customer photo" />
+              <img src="content/img/customer/6.jpg" alt="Customer photo" />
+              <img src="content/img/customer/7.jpg" alt="Customer photo" />
+            </div>
+            <p class="delivered-text">
+              <span>40,000+</span> products delivered last year!
+            </p>
+          </div>
+        </div>
+        <div class="hero-img-box">
+          <img src="content/img/product/hero.png" class="hero-img" alt="MacBook Laptop and headset" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-products">
+      <div class="container center-text">
+        <span class="subheading">Trending Now</span>
+        <h2 class="heading-secondary">
+          Best Selling Products
+        </h2>
+      </div>
+
+      <div class="container grid grid--4-cols margin-bottom-md">
+        <div class="product">
+          <img src="content/img/product/monitor-mac.png" alt="A MacBook Monitor" class="product-img" />
+          <div class="product-content">
+            <p class="product-title">A MacBook Monitor</p>
+            <div class="product-attributes">
+              <div class="product-description">$120.00</div>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <a href="#" class="btn--icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="content/img/product/earpiece.png" alt="Sony Earpiece" class="product-img" />
+          <div class="product-content">
+            <p class="product-title">Sony Earpiece</p>
+            <div class="product-attributes">
+              <div class="product-description">$40.00</div>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <a href="#" class="btn--icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="content/img/product/earpiece2.png" alt="Sony Earpiece" class="product-img" />
+          <div class="product-content">
+            <p class="product-title">Sony Earpiece</p>
+            <div class="product-attributes">
+              <div class="product-description">$50.00</div>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <a href="#" class="btn--icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="content/img/product/headphone-rts.png" class="product-img" alt="RTS Headphones" />
+          <div class="product-content">
+            <p class="product-title">RTS Headphones</p>
+            <div class="product-attributes">
+              <div class="product-description">$90.00</div>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <a href="#" class="btn--icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="content/img/product/laptop-hp.png" alt="HP Laptop" class="product-img" />
+          <div class="product-content">
+            <p class="product-title">HP Laptop</p>
+            <div class="product-attributes">
+              <div class="product-description">$200.00</div>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <a href="#" class="btn--icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="content/img/product/oven2-1.png" alt="Oven" class="product-img" />
+          <div class="product-content">
+            <p class="product-title">Oven</p>
+            <div class="product-attributes">
+              <div class="product-description">$100.00</div>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <a href="#" class="btn--icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="content/img/product/washing machine.png" alt="Washing Machine" class="product-img" />
+          <div class="product-content">
+            <p class="product-title">Washing Machine</p>
+            <div class="product-attributes">
+              <div class="product-description">$110.00</div>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <a href="#" class="btn--icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="content/img/product/headphones.png" alt="Headphones" class="product-img" />
+          <div class="product-content">
+            <p class="product-title">Headphone</p>
+            <div class="product-attributes">
+              <div class="product-description">$65.00</div>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <a href="#" class="btn--icon">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container all-products">
+        <a href="#" class="link">See all products &rarr;</a>
+      </div>
+    </section>
+
+    <section class="section-testimonials">
+      <div class="testimonials-container">
+        <span class="subheading">Testimonials</span>
+        <h2 class="heading-secondary">Don't break the bank, we are here for you</h2>
+
+        <div class="testimonials">
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Dave Bryson" src="content/img/customer/1.jpg" />
+            <blockquote class="testimonial-text">
+              I have always wanted to buy some cool gadgets and CDcare made owning these things very easy for me.
+            </blockquote>
+            <p class="testimonial-name">&mdash; Dave Bryson</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Ben Hadley" src="content/img/customer/3.jpg" />
+            <blockquote class="testimonial-text">
+              ...at first I was skeptical. Months later I decided to change my laptop and chose to use their instalment
+              payments. It was a very good experience and the flexibility helped me handle other pressing expenses.
+            </blockquote>
+            <p class="testimonial-name">&mdash; Ben Hadley</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Steve Miller" src="content/img/customer/8.jpg" />
+            <blockquote class="testimonial-text">
+              CDcare made life easier for me when it was time for me to get my home appliances. The convenience I got
+              from having to pay instalmentally and I was able to use the extra to do other things.
+            </blockquote>
+            <p class="testimonial-name">&mdash; Steve Miller</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Hannah Smith" src="content/img/customer/2.jpg" />
+            <blockquote class="testimonial-text">
+              I doubted CDcare at first and I had to visit their office before I made my first instalment. I believed
+              and told many more people about CDcare when I collected my Fridge. I have made it my responsibility to
+              tell everybody about this wonderful product
+            </blockquote>
+            <p class="testimonial-name">&mdash; Hannah Smith</p>
+          </figure>
+        </div>
+      </div>      
+    </section>
+
+    <section class="section-pricing">
+      <div class="container">
+        <span class="subheading">Pricing</span>
+        <h2 class="heading-secondary">
+          Own gadgets without breaking the bank
+        </h2>
+      </div>
+
+      <div class="container grid grid--2-cols margin-bottom-md">
+        <div class="pricing-plan pricing-plan--starter">
+          <header class="plan-header">
+            <p class="plan-name">Make Payments</p>
+            <p class="plan-price"><span>for</span>gadgets</p>
+            <p class="plan-text">at once!</p>
+          </header>
+
+        </div>
+
+        <div class="pricing-plan pricing-plan--complete">
+          <header class="plan-header">
+            <p class="plan-name">Make Payments</p>
+            <p class="plan-price"><span>for</span>gadgets</p>
+            <p class="plan-text">in installments!</p>
+          </header>
+
+        </div>
+      </div>
+
+      <div class="container grid">
+        <aside class="plan-details">
+          Prices include all applicable taxes and delivery fee where applicable. To cancel payment in installments at any time, see terms and conditions
+        </aside>
+      </div>
+
+      <div class="container grid grid--4-cols">
+        <div class="feature">
+          <i class="fa-solid fa-infinity feature-icon"></i>
+          <p class="feature-title">No more fretting!</p>
+          <p class="feature-text">
+            Our installment plans vary between 1 month to 12 months
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-house feature-icon"></i>
+          <p class="feature-title">Home Delivery</p>
+          <p class="feature-text">
+            Our cooks only use local, fresh, and organic products to prepare
+            your products.
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-store feature-icon"></i>
+          <p class="feature-title">Store Pickup</p>
+          <p class="feature-text">
+            All our partners only use reusable containers to package all your
+            products.
+          </p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-pause feature-icon"></i>
+          <p class="feature-title">Pause anytime</p>
+          <p class="feature-text">
+            Financial issues? Just contact the customer care line
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Get your first gadget today!</h2>
+            <p class="cta-text">
+              Your desired electrical gadgets at zero interest with no strain on their finances with the option of payment in
+              installments awaits you!
+            </p>
+
+            <form class="cta-form" action="#">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="John Smith" required />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="me@example.com" required />
+              </div>
+
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">YouTube video</option>
+                  <option value="podcast">Social Media</option>
+                  <option value="ad">Newsletter</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+
+              <button class="btn btn--form">Sign up now</button>
+
+            </form>
+          </div>
+          <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo" alt="EverythingAffordable logo" src="content/img/logo/EverythingAffordable.jpg" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; 2027 by EverythingAffordable, Inc. All rights reserved.
+        </p>
+      </div>
+      <div class="address-col">
+        <p class="footer-heading">Contact us</p>
+        <address class="contacts">
+          <p class="address">
+            4200 Fifth Ave, Pittsburgh, PA 15260, United States
+          </p>
+          <p>
+            <a class="footer-link" href="tel:+1 412-624-4141">+1 412-624-4141</a><br />
+            <a class="footer-link" href="mailto:hello@everythingaffordable.com">hello@everythingaffordable.com</a>
+          </p>
+        </address>
+      </div>
+      <nav class="nav-col">
+        <p class="footer-heading">Account</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Create account</a></li>
+          <li><a class="footer-link" href="#">Sign in</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">About Everything Affordable</a></li>
+          <li><a class="footer-link" href="#">For Business</a></li>
+          <li><a class="footer-link" href="#">Cooking partners</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Resources</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Recipe directory </a></li>
+          <li><a class="footer-link" href="#">Help center</a></li>
+          <li><a class="footer-link" href="#">Privacy & terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
